@@ -1,0 +1,1075 @@
+body {
+    margin: 0;
+}
+
+main {
+    overflow: auto;
+}
+
+
+
+
+/* Home page */
+
+/* Set up the position for menu navigator */
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 28.5px 30px 28.5px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+/* font color for home page */
+.home {
+    color: white;
+}
+
+/* Create changing background image  */
+#home_body {
+    background-image: url(../images/img7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: change 20s infinite ease-in-out;
+    color: white;
+}
+
+@keyframes change {
+    0% {
+        background-image: url(../images/img1.png);
+    }
+
+    20% {
+        background-image: url(../images/img2.png);
+    }
+
+    40% {
+        background-image: url(../images/img3.png);
+    }
+
+    60% {
+        background-image: url(../images/img4.png);
+    }
+
+    80% {
+        background-image: url(../images/img5.png);
+    }
+
+    100% {
+        background-image: url(../images/img6.png);
+    }
+}
+
+/* style for hyperlink */
+a {
+    text-decoration: none;
+    font-size: 23px;
+    color: black;
+}
+
+
+
+/* general css style  */
+.links li {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+/* general css style  */
+.text_head {
+    margin-right: auto;
+    font-size: 60px;
+}
+
+
+
+
+/* general css style  */
+.container_head {
+    margin-right: auto;
+}
+
+
+/* create style for contact link */
+.contact {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+    font-size: 23px;
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    outline: 2px solid #2c9caf;
+    transition: all 1.2s;
+    color: white;
+}
+
+.contact:hover {
+    transform: scale(1.1);
+    color: #000;
+    
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    background-color: rgb(122, 208, 230);
+    transform: skewX(135deg);
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: width 1s;
+
+}
+
+.contact:hover::before {
+    width: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+/* About page */
+
+/* Drop-text animation */
+.drop-main {
+    display: flex;
+    font-size: 7rem;
+    margin: 1.5rem;
+    justify-content: center;
+    font-family: "Russo One", sans-serif;
+}
+
+.d {
+    opacity: 0;
+    animation: drop 0.4s linear forwards;
+    color: black;
+}
+
+.r {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.2s;
+    color: black;
+}
+
+.o {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.4s;
+    color: black;
+}
+
+.p {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.6s;
+    color: black;
+}
+
+.s {
+    opacity: 0;
+    animation: drop 0.4s linear forwards 0.8s;
+    color: #de4040;
+}
+
+.space {
+    opacity: 0;
+}
+
+@keyframes drop {
+    0% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    65% {
+        transform: translateY(-17px);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-22px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+/* general css style  */
+.about_section_2 {
+    padding: 0;
+    background-color: lightgray;    
+}   
+
+.about_section_2 h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.about_section_1 {
+    padding: 0 40px;
+}
+
+
+/*Slide animated image*/
+
+.slide-images {
+    width: 3880px;
+    height: 577px;
+    margin: 0 0 0 -3880px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    animation-timing-function: ease;
+}
+
+.img-container {
+    height: 577px;
+    width: 776px;
+    position: relative;
+    float: left;
+}
+
+.img-container img{
+    height: 577px;
+    width: 776px;
+
+}
+
+.slider-frame {
+    overflow: hidden;
+    height: 577px;
+    width: 776px;
+
+}
+
+@keyframes slide_animation {
+    0% {
+        left: 776px;
+    }
+
+    12.5% {
+        left: 776px;
+    }
+
+    25% {
+        left: 1552px;
+    }
+
+    27.5% {
+        left: 1552px;
+    }
+
+    50% {
+        left: 2328px;
+    }
+
+    62.5% {
+        left: 2328px;
+    }
+
+    75% {
+        left: 3104px;
+    }
+
+    87.5% {
+        left: 3104px;
+    }
+
+    100% {
+        left: 3880px;
+    }
+}
+
+
+
+
+
+/* general css style for font   */
+.ht_text {
+    align-self: center;
+    width: 30%;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about_text {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.6;
+
+}
+
+
+.container_hometown_img {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+
+
+.self_img {
+    border-radius: 50%;
+}
+
+
+/* Create 2 column */
+.column {
+    float: left;
+    padding: 10px;
+    height: auto;
+}
+
+.left_about {
+    width: 60%;
+    margin-left: 1%;
+}
+
+.right_about {
+    width: 36%;
+    justify-content: center;
+    padding: 100px 0 0 20px;
+
+}
+
+.link a {
+    display: flex;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 40px 41px;
+}
+
+
+/* general css style for get in touch link */
+
+.cnt {
+    border: 1px solid black;
+    background-color: white;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    padding: 0.7em 2em;
+    border-radius: 2px;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+}
+
+.cnt:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: black;
+    z-index: -1;
+}
+
+.cnt:hover,
+button:focus {
+    color: white;
+}
+
+.cnt:hover:before,
+button:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+.cnt:active {
+    transform: scale(0.9);
+}
+
+
+
+.container_cnt {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 110px;
+
+}
+
+
+/* css style for hr */
+hr {
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+
+
+
+
+
+
+/* Contact */
+
+
+/* Create Animated border for submit button */
+
+.form_submit span {
+    position: absolute;
+    display: block;
+}
+
+.form_submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #fff);
+    animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.form_submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #fff);
+    animation: btn-anim2 1.5s linear infinite;
+    animation-delay: .375s
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.form_submit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #fff);
+    animation: btn-anim3 1.5s linear infinite;
+    animation-delay: .75s
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.form_submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #fff);
+    animation: btn-anim4 1.5s linear infinite;
+    animation-delay: 1.125s
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+
+
+/* Set up position for 2 columns */
+.left_cnt {
+    width: 38%;
+    padding: 0 20px;
+}
+
+.right_cnt {
+    width: 53%;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+
+/*css for input, type = text*/
+.text_holder {
+    position: relative;
+    margin-bottom: 40px;
+
+}
+
+/*label that sits inside input*/
+.text_holder label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+/*customized label*/
+.text_holder input {
+    position: relative;
+    height: 40px;
+    padding: 0 15px;
+    margin-left: 10px;
+    width: 95%;
+    border: 1px solid rgba(0, 0, 0, 0.126);
+    background-color: #aaaaaa2f;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.1s;
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    z-index: 0;
+    box-shadow: 0 10px 25px rgba(244, 242, 242, 0.5);
+    color: black;
+}
+
+/*placeholder not displayed*/
+.text_holder ::placeholder {
+    visibility: hidden;
+    color: #27282C
+}
+
+/*slide up label when input focused*/
+.text_holder input:focus~label {
+    top: -12px;
+    z-index: 0;
+    background: transparent;
+    transition: .25s;
+    color: black;
+    font-size: 18px;
+}
+
+/*placeholder visible when input focused*/
+.text_holder input:focus::placeholder {
+    visibility: visible;
+}
+
+.text_holder input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.01);
+    transition: transform 0.3s ease-in-out;
+}
+
+.area_holder textarea {
+    margin-left: 10px;
+    width: 100%;
+    background-color: #aaaaaa2f;
+}
+
+
+/* general style for font */
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.cnt_text {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.02em;
+    word-wrap: break-word;
+    line-height: 1.9em;
+}
+
+.cnt_text p {
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-bottom: 20px;
+}
+
+
+
+.gmail {
+    text-align: center;
+    margin-right: 30px;
+}
+
+
+
+.logo {
+    position: relative;
+    display: flex;
+    width: 50%;
+}
+
+.link {
+    width: 80px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.social_link {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*submit button css*/
+.form_submit {
+    margin: 20px 30px 0px 10px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+
+
+}
+
+.submit_text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: white;
+
+}
+
+.form_submit input {
+    appearance: none;
+    width: 130px;
+    height: 50px;
+    border: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.submit_text:hover {
+    transition: all .6s;
+    color: white;
+    background-color: black;
+}
+
+
+/* Schedule */
+
+
+/* Set up general style for table */
+
+.table {
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 20px 20px;
+    margin-bottom: 5%;
+    background-color: rgba(49, 9, 9, 0.619);
+    -webkit-backdrop-filter: blur(500px);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    background-image: url(../images/schedule.jpg);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+/* Remove unwanted border and set up size */
+table,
+th,
+td {
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 25px;
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    overflow-x: clip;
+    text-overflow: ellipsis;
+}
+
+/* Apply style for font and set up background */
+.th {
+    font-size: 40px;
+    font-weight: bold;
+    color: yellow;
+    text-shadow: 2px 2px 8px #FF0000;
+    background-color: rgb(0, 255, 128);
+
+}
+
+
+td:first-child {
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+td,
+tr {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.day {
+    background-color: #ff6385a7;
+    text-shadow: 1px 1px 5px #00d0ff;
+}
+
+.class_1 {
+    background-color: rgb(206, 206, 206);
+}
+
+.class_2 {
+    background-color: rgb(211, 127, 220);
+}
+
+.class_3 {
+    background-color: rgb(92, 192, 114);
+}
+
+
+
+
+/* Favourite page */
+
+/* Set up position and size */
+article {
+    float: left;
+    width: 75%;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+aside {
+    float: right;
+    width: 20%;
+    margin-top: 10%;
+    border-left: 1px solid black;
+    text-align: left;
+    padding: 10px;
+}
+
+.container_manga {
+    display: flex;
+    height: 500px;
+
+}
+
+
+
+
+li::marker{
+    font-size: 1.17em;
+}
+
+/* Apply style for font and set up background */
+
+.description_manga1 {
+    padding: 150px 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/manga_bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 18px;
+}
+
+.description_manga2 {
+    padding: 150px 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/manga2_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-size: 18px;
+}
+
+aside p {
+    font-size: 20px;
+}
+
+
+
+/* Create animated link  */
+.read_manga {
+    margin-top: 100px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+    width: 50%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #DB08D3 50%, rgba(255, 255, 255, 0) 100%);
+    text-align: center;
+    transition: width .4s ease-out, letter-spacing .4s ease-out, opacity .4s ease-out;
+    text-transform: uppercase;
+    font-size: 16px;
+    overflow: hidden;
+    letter-spacing: .05rem;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 60px;
+    opacity: 0.6;
+}
+
+.read_manga:hover {
+    width: 92%;
+    letter-spacing: 1.5em;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.read_manga a {
+    color: white;
+}
+
+
+.container_read{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Animation page */
+
+/* highlight animation implemented */
+.animation_link:hover {
+    color: #9900ff;
+    text-decoration-line: underline;
+
+}
+
+/* general css style for footer */
+footer {
+    background: #111;
+    height: auto;
+    font-family: "Open Sans";
+    margin-top: 40px;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+/* set up position for social icon */
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li {
+    margin: 0 10px;
+    width: 60px;
+}
+
+.socials a img {
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: none;
+}
+
+.socials a img {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+
+/* set up font for footer */
+.footer-bottom {
+    background: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+#en_foo {
+    position: relative;
+    height: 384px;
+    top: 0;
+    left: 16px;
+    width: calc(100% - 32px);
+    bottom: 16px;
+    min-height: 384px;
+    max-height: 1024px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* The css value of 2 gray divs. In here I set height, width, corner radius and blur behind the div */
+#en_foo_ab,
+#en_foo_ah {
+    position: relative;
+    height: 100%;
+    width: calc(50% - 8px);
+    background-color: rgba(190, 190, 190, 0.8);
+    border-radius: 16px;
+    overflow-y: scroll;
+    transition: 0.3s cubic-bezier(0, 0, 0, 1);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+}
+
+/* I hide the scrollbar of 2 div as I set overflow-y scroll previously. Notice that only webkit web browsers like chrome or safari (?) have effects */
+#en_foo_ab::-webkit-scrollbar,
+#en_foo_ah::-webkit-scrollbar {
+    display: none;
+}
+
+#en_foo:hover>* {
+    opacity: 0.8;
+    transform: scale(0.975);
+    filter: blur(10px);
+}
+
+#en_foo:hover>*:hover {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0px);
+}
+
+.en_page {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* That big hero text in the first slide */
+.en_herotext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.en_page_bottom {
+    position: absolute;
+    bottom: 8px;
+}
+
+.en_heroimg,
+.en_page_code {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 16px;
+}
+
+/* highlight animation implemented */
+.form_submit:target {
+    border: 10px solid red;
+}
+
+.drop-main:target {
+    border: 10px solid red;
+}
+
+.en_hr {
+    background: #1a1a1a;
+}
+
+
+

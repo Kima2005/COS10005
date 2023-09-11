@@ -1,0 +1,158 @@
+@media screen and (max-width: 500px) {
+
+    body,
+    html {
+        width: 100%;
+    }
+
+    /* home page*/
+
+    /* reduce size  */
+    .text_head {
+        font-size: 30px;
+    }
+    .contact {
+        text-align: center;
+        width: 170px;
+    }
+
+    .left_cnt {
+        width: auto;
+        clear: both;
+        padding: 10px;
+    }
+
+    .right_cnt {
+        width: auto;
+    }
+
+    /* about page */
+
+    /* reduce font-size */
+    .drop-main {
+        font-size: 4rem;
+    }
+
+    /* modify appropriate padding, margin and size */
+    .about_section_1 {
+        padding: 0;
+    }
+
+    .left_about {
+        width: auto;
+    }
+
+    .right_about {
+        width: auto;
+        padding: 100px 30px 0 30px;
+    }
+
+    .self_img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    .container_hometown_img {
+        display: block;
+        padding: 10px;
+    }
+
+    .ht_text {
+        width: auto;
+        padding: 10px;
+    }
+
+    .slider-frame {
+        height: auto;
+        width: auto;
+    }
+
+    .slide-images {
+        width: auto;
+        height: auto;
+    }
+
+    .img-container img {
+        height: 344px;
+        width: 463px;
+
+    }
+
+    .img-container {
+        height: auto;
+    }
+
+
+    /* favourite page */
+
+    /* Clear floats after resize screen */
+    article {
+        float: none;
+        width: auto;
+        margin: 0;
+        padding: 10px;
+    }
+
+    aside {
+        float: none;
+        width: auto;
+        margin: 0;
+        padding: 10px;
+        border: none;
+    }
+
+    .container_manga {
+        display: unset;
+        height: auto;
+    }
+
+    .description_manga1 {
+        padding: 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/after_god.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 18px;
+
+    }
+
+    .description_manga2 {
+        padding: 10px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tower_of_god.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        font-size: 18px;
+    }
+
+    ol {
+        padding: 0;
+    }
+
+    .container_img_mg {
+        display: grid;
+
+    }
+
+    .container_manga img {
+        justify-self: center;
+    }
+
+
+
+    /* Schedule page */
+    table,
+    td,
+    th {
+        font-size: 9px;
+        overflow-wrap: break-word;
+        height: auto;
+    }
+
+    .th {
+        font-size: 19px;
+
+    }
+
+}
